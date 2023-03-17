@@ -9,8 +9,11 @@ class Driver extends Model
 {
     use HasFactory;
 
+    protected $table = "drivers";
+
     protected $fillable = [
         'driver_name',
+        'driver_team',
         'driver_score'
     ];
 }

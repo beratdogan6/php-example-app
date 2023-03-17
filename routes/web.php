@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {return view('welcome');});
 Route::get('/cars', [CarController::class, "list"])->name("cars");
-Route::get('/drivers', [DriverController::class, "list"])->name("driveers");
+Route::post('store-form-car', [CarController::class, 'store'])->name('store-form-car');
+Route::get('/drivers', [DriverController::class, "list"])->name("drivers");
+Route::post('store-form-driver', [DriverController::class, 'store'])->name('store-form-driver');

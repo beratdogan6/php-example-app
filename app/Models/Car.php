@@ -9,10 +9,7 @@ class Car extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'team_name',
-        'team_score'
-    ];
+    protected $table = 'cars';
 
 }
 
