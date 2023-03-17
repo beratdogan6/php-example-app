@@ -11,5 +11,8 @@ class Car extends Model
 
     protected $table = 'cars';
 
+    protected $fillable = [
+        'team_name',
+        'team_score'
+    ];
 }
-
